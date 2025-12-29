@@ -4,8 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+tinvest = "*"
+pydantic = "*"
+grpcio = "*"
+grpcio-tools = "*"
+pandas = "*"
+numpy = "*"
+python-dotenv = "*"
+t-tech-investments = "*"
 
 [dev-packages]
+mypy = "*"
+types-protobuf = "*"
 
 [requires]
 python_version = "3.13"
