@@ -1,10 +1,8 @@
 """
 Конфигурация для Tinkoff Invest API.
-Будет дополняться в процессе разработки.
 """
 import os
 from pathlib import Path
-
 from dotenv import load_dotenv
 
 # Загружаем переменные окружения из .env файла
@@ -28,7 +26,9 @@ class TinkoffConfig:
     @property
     def use_sandbox(self) -> bool:
         """Использовать песочницу для тестирования"""
-        return os.getenv('USE_SANDBOX', 'true').lower() == 'true'
+        sandbox_value = os.getenv('USE_SANDBOX', 'false').lower()
+        # Преобразуем строку в булево значение
+        return sandbox_value in ('true', '1', 'yes', 'y')
     
     @property
     def app_name(self) -> str:
@@ -37,3 +37,9 @@ class TinkoffConfig:
 
 # Создаем глобальный экземпляр конфигурации
 config = TinkoffConfig()
+
+# Вывод текущих настроек для отладки
+if __name__ == "__main__":
+    print(f"Токен загружен: {'*' * min(10, len(config.api_token))}...")
+    print(f"Режим песочницы: {config.use_sandbox}")
+    print(f"Имя приложения: {config.app_name}")

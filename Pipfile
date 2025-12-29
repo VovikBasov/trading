@@ -5,12 +5,13 @@ name = "pypi"
 
 [packages]
 tinvest = "*"
-python-dotenv = "*"
 pydantic = "*"
 grpcio = "*"
 grpcio-tools = "*"
 pandas = "*"
 numpy = "*"
+python-dotenv = "*"
+t-tech-investments = "*"
 
 [dev-packages]
 mypy = "*"
