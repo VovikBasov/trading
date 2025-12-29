@@ -1,0 +1,116 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Config files (except default)
+config/config.yaml
+config/secrets.json
+
+# Tinkoff API
+*.token
+*.key
+
+# Database
+*.db
+*.sqlite
+
+# Логи
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Пишем свои настройки конфигурации (не коммитим!)
+config/local.yaml
+
+# --- Автоматически добавленные ---
+# Виртуальные окружения pipenv (уже могут быть)
+.vscode/
+.idea/
+
+# Автоматические бэкапы кода (добавляем сейчас)
+code_backup_*.txt
+
+# Локальные конфиги (добавляем на будущее)
+config/local.yaml
+config/secrets.yaml
+*.local.yaml
+.env
+
+# Логи (добавляем на будущее)
+logs/*.log
